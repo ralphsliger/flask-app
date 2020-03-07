@@ -20,7 +20,7 @@ def getMysqlConnection():
 # Mysql Connection
 app.config['MYSQL_HOST'] = 'localhost' 
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'secret
+app.config['MYSQL_PASSWORD'] = 'secret'
 app.config['MYSQL_DB'] = 'flaskapp'
 mysql = MySQL(app)
 
