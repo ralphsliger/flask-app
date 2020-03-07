@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Arquitectura de Software </title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{{url_for('vendor', filename='bootstrap/css/bootstrapmin.css')}}">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/scrolling-nav.css')}}">
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Functional Based Structure o Functionalism </h1>
+      <p class="lead">Mas que un modelo de software, es un modelo empresarial. pero esta filosofia se ha visto reflejada en flask. En este proyecto se utilizo la arquitecura Funcional based structure</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Sobre este patron</h2>
+          <p class="lead">Podria compararse a la programacion funcional. Las cosas se organizan segun sus funciones: Si se comporta como un controlador va en el modelo de las rutas, si se comporta como una vista va en el modelo template</p>
+          <ul>
+            <li>Es facil de usar, tiene algo de parecido en el modelo vista controlador en su orden.</li>
+            <li>en este caso el proyecto esta dividido entre vistas y un controlador y dos modelos de bases de datos</li>
+            <li>el controlador define la logica de la aplicacion, le dice si sucede tal cosa haz esto: le dice a la aplicacion como actuar </li>
+            <li>Los modelos estan definidos en el mismo controlador, esto se podria mejorar intansciandolo en otro archivo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Beneficios</h2>
+          <p class="lead">Rapido y facil de usar, como el patron es funcional, si la aplicacion no lo requiere se puede simplificar.</p>
+          <p> Referencia : https://lepture.com/en/2018/structure-of-a-flask-project</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

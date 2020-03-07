@@ -1,0 +1,20 @@
+version: '2' 
+services:
+  web:
+    dockerfile: app.dockerfile
+    build: flask-app
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/code
+  mysql:
+    dockerfile: db.dockerfile
+    build: mysql-server
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: 0.0.0.0
+      MYSQL_USER: testing
+      MYSQL_PASSWORD: testing
+    ports:
+      - "3306:3306"
