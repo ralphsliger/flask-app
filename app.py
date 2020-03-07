@@ -2,13 +2,14 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from datetime import datetime
 from flaskext.mysql import MySQL
 import redis
-
+from celery import Celery
 
 
 
 app = Flask(__name__)
 
-db = redis.Redis('localhost') # reddis
+app.config.from_object("config")
+app.secret_key = app.config['SECRET_KEY']
 
 
 ##docker

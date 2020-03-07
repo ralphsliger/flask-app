@@ -11,10 +11,10 @@ services:
     dockerfile: db.dockerfile
     build: mysql-server
     environment:
-      MYSQL_DATABASE: test
+      MYSQL_DATABASE: flaskapp
       MYSQL_ROOT_PASSWORD: root
       MYSQL_ROOT_HOST: 0.0.0.0
-      MYSQL_USER: testing
-      MYSQL_PASSWORD: testing
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
     ports:
       - "3306:3306"
