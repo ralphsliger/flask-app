@@ -9,7 +9,7 @@ services:
      - .:/code
   mysql:
     dockerfile: db.dockerfile
-    build: mysql-server
+    build: mysql-serv
     environment:
       MYSQL_DATABASE: flaskapp
       MYSQL_ROOT_PASSWORD: root
